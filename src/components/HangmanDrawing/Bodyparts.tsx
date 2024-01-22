@@ -1,4 +1,4 @@
-const HEAD = (
+export const HEAD = (
     <div 
         style={{
             width:"50px",
@@ -12,7 +12,7 @@ const HEAD = (
     </div>
 )
 
-const BODY = (
+export const BODY = (
     <div 
         style={{
             width:"10px",
@@ -25,7 +25,7 @@ const BODY = (
     </div>
 )
 
-const RIGHT_ARM = (
+export const RIGHT_ARM = (
     <div 
         style={{
             width:"100px",
@@ -41,7 +41,7 @@ const RIGHT_ARM = (
     </div>
 )
 
-const LEFT_ARM = (
+export const LEFT_ARM = (
     <div 
         style={{
             width:"100px",
@@ -57,7 +57,7 @@ const LEFT_ARM = (
     </div>
 )
 
-const RIGHT_LEG = (
+export const RIGHT_LEG = (
     <div 
         style={{
             width:"100px",
@@ -73,7 +73,7 @@ const RIGHT_LEG = (
     </div>
 )
 
-const LEFT_LEG = (
+export const LEFT_LEG = (
     <div 
         style={{
             width:"100px",
@@ -88,17 +88,3 @@ const LEFT_LEG = (
         }}>
     </div>
 )
-export function HangmanDrawing() {
-    return <div style={{position:"relative"}}>
-        {HEAD}
-        {BODY}
-        {RIGHT_ARM}
-        {LEFT_ARM}
-        {RIGHT_LEG}
-        {LEFT_LEG}
-        <div style={{height:"50px", width:"10px", background:"black",position:"absolute", top:0, right:0}}/>
-        <div style={{height:"10px", width:"200px", background:"black", marginLeft:"120px"}}/>
-        <div style={{height:"400px", width:"10px", background:"black", marginLeft:"120px"}}/>
-        <div style={{height:"10px", width:"250px", background:"black"}}/>
-    </div>
-}

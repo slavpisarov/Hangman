@@ -1,8 +1,8 @@
 import { useState } from "react"
 import words from "./wordList.json"
-import { HangmanDrawing } from "./HangmanDrawing "
-import { HangmanWord } from "./HangmanWord"
-import { Keyboard } from "./Keyboard"
+import { HangmanDrawing } from "./components/HangmanDrawing/HangmanDrawing "
+import { HangmanWord } from "./components/HangmanWord"
+import { Keyboard } from "./components/Keyboard"
 
 function App() {
 
