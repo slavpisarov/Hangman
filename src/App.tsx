@@ -9,7 +9,15 @@ function App() {
   const[guessedLetters,setGuessedLetters] = useState<string[]>([])
   
   return (
-    <div>
+    <div
+      style={{
+        maxWidth: "800px",
+        display:"flex",
+        flexDirection:"column",
+        gap: "2rem",
+        margin: "0 auto",
+        alignItems: "center"
+      }}>
       <h1>Test</h1>
     </div>
   )
