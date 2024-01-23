@@ -1,4 +1,5 @@
 import * as draw from "./Bodyparts"
+
 export function HangmanDrawing() {
     return <div style={{position:"relative"}}>
         {draw.HEAD}
