@@ -1,80 +1,84 @@
-export const HEAD = (
-    <div 
+const BODY_PARTS = [
+    (
+      <div
+        key="HEAD"
         style={{
-            width:"50px",
-            height:"50px",
-            borderRadius:"100%",
-            border:"10px solid black",
-            position:"absolute",
-            top:"50px",
-            right:"-30px"
-        }}>
-    </div>
-)
-
-export const BODY = (
-    <div 
+          width: "50px",
+          height: "50px",
+          borderRadius: "100%",
+          border: "10px solid black",
+          position: "absolute",
+          top: "50px",
+          right: "-30px",
+        }}
+      ></div>
+    ),
+  
+    (
+      <div
+        key="BODY"
         style={{
-            width:"10px",
-            height:"100px",
-            background:"black",
-            position:"absolute",
-            top:"120px",
-            right: 0
-        }}>
-    </div>
-)
-
-export const RIGHT_ARM = (
-    <div 
+          width: "10px",
+          height: "100px",
+          background: "black",
+          position: "absolute",
+          top: "120px",
+          right: 0,
+        }}
+      ></div>
+    ),
+  
+    (
+      <div
+        key="RIGHT_ARM"
         style={{
-            width:"100px",
-            height:"10px",
-            background:"black",
-            position:"absolute",
-            top:"150px",
-            right: "-100px",
-            rotate:"-30deg",
-            transformOrigin:"left bottom"
-
-        }}>
-    </div>
-)
-
-export const LEFT_ARM = (
-    <div 
+          width: "100px",
+          height: "10px",
+          background: "black",
+          position: "absolute",
+          top: "150px",
+          right: "-100px",
+          transform: "rotate(-30deg)",
+          transformOrigin: "left bottom",
+        }}
+      ></div>
+    ),
+  
+    (
+      <div
+        key="LEFT_ARM"
         style={{
-            width:"100px",
-            height:"10px",
-            background:"black",
-            position:"absolute",
-            top:"150px",
-            right: "10px",
-            rotate:"30deg",
-            transformOrigin:"right bottom"
-
-        }}>
-    </div>
-)
-
-export const RIGHT_LEG = (
-    <div 
+          width: "100px",
+          height: "10px",
+          background: "black",
+          position: "absolute",
+          top: "150px",
+          right: "10px",
+          transform: "rotate(30deg)",
+          transformOrigin: "right bottom",
+        }}
+      ></div>
+    ),
+  
+    (
+      <div
+        key="RIGHT_LEG"
         style={{
-            width:"100px",
-            height:"10px",
-            background:"black",
-            position:"absolute",
-            top:"300px",
-            right: "-40px",
-            rotate:"60deg",
-            transformOrigin:"right bottom"
-
-        }}>
-    </div>
-)
-
-export const LEFT_LEG = (
-    <div 
+          width: "100px",
+          height: "10px",
+          background: "black",
+          position: "absolute",
+          top: "300px",
+          right: "-40px",
+          transform: "rotate(60deg)",
+          transformOrigin: "right bottom",
+        }}
+      ></div>
+    ),
+  
+    (
+      <div
+        key="LEFT_LEG"
         style={{
             width:"100px",
             height:"10px",
@@ -84,7 +88,10 @@ export const LEFT_LEG = (
             right: "-50px",
             rotate:"-60deg",
             transformOrigin:"LEFT bottom"
-
-        }}>
-    </div>
-)
+        }}
+      ></div>
+    ),
+  ];
+  
+  export default BODY_PARTS;
+  
