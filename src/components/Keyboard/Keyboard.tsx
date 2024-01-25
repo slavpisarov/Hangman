@@ -3,12 +3,16 @@ import styles from "./Keyboard.module.css"
 
 type KeyboardProps = {
     activeLetters: string[],
+    disabled?: boolean,
     inactiveLetters: string[],
     addGuessedLetter: (letter: string) => void
 }
 
 export function Keyboard({
-    activeLetters, inactiveLetters, addGuessedLetter }: KeyboardProps
+    activeLetters, 
+    disabled = false,
+    inactiveLetters, 
+    addGuessedLetter }: KeyboardProps
 ) {
 
     return <div className={styles.keyboard}>
@@ -21,7 +25,7 @@ export function Keyboard({
                     className={`${styles.btn} 
                     ${isActive ? styles.active : ""}
                     ${isInactive ? styles.inactive : ""}`}
-                    disabled = {isActive || isInactive}
+                    disabled = {isActive || isInactive || disabled}
                     key={key}
                     >
                         {key}</button>
